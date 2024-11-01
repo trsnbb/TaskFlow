@@ -1,0 +1,160 @@
+
+.flex{
+    display: flex;
+}
+
+.center_item{
+    align-items: center;
+}
+
+.container_header {
+    padding: 6px 24px;
+    width: 100%;
+    max-width: 1920px;
+    border-bottom: #9EB196 solid 3px;
+    height: 64px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.logo_block {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 45px;
+
+}
+
+.logo_img{
+    width: 49px;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+}
+
+
+.logo_title {
+    font-size: 28px;
+    text-align: center;
+    color: #20341B;
+    cursor: pointer;
+}
+
+
+.header_navbar {
+    width: 100%;
+}
+
+.header_wrapper_left{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.search {
+    border-radius: 25px;
+    background-color: #E0E4DF;
+    width: 350px;
+    max-width: 410px;
+    height: 50px;
+    align-items: center;
+    gap: 16px;
+    padding-left:20px;
+    min-width: 200px;
+    cursor: pointer;
+
+    /* margin-right: 100px; */
+}
+
+.g-16{
+    gap: 16px;
+}
+
+.search_title {
+    color: #4E7140;
+    opacity: 65%;
+    font-size: 14px;
+}
+
+.notification {
+    background-color: #E0E4DF;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;   
+}
+
+.calendary {
+    background-color: #E0E4DF;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+}
+
+.account {
+    background-color: #E0E4DF;
+    border-radius: 57px;
+    width: 220px;
+    min-width: 202px;
+    height: 50px;
+
+    padding: 10px 8px;
+    cursor: pointer;
+}
+
+.account_photo {
+    align-items: center;
+    border-radius: 50%;
+    width: calc(100% - 80%);
+    aspect-ratio: 1 / 1;
+    
+}
+
+.account-text{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.account_title {
+    color: #20341B;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.account_position {
+    font-size: 11px;
+    color: #4E7140;
+}
+
+.circle-arrow {
+    display: inline-block;
+    position: relative;
+    width: 16px; /* Розмір кола */
+    height: 16  px;
+    border-radius: 50%;
+}
+
+.circle-arrow::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg); /* Центрування стрілки */
+    width: 10px; /* Ширина стрілки */
+    height: 10px; /* Висота стрілки */
+    border-left: 3px solid #20341B; /* Ліва частина стрілки */
+    border-bottom-left-radius: 20%;
+    border-bottom: 3px solid #20341B; /* Нижня частина стрілки */
+    border-bottom-right-radius: 25%;
+    border-top-left-radius: 25%;
+}
