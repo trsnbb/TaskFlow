@@ -68,12 +68,7 @@ const Navbar = () => {
           Мої проєкти
           <img src={add_project} alt='add project' />
         </div>
-        <div className='my_project'>
-          <div className='project'>
-            <div className='circle'></div>
-            Без назви
-          </div>
-        </div>
+       
       </div>
     </div>
   );
