@@ -6,10 +6,6 @@ import calendary from "./../../img/icons/header/calendary.svg"
 import logo from "./../../img/logo.svg"
 import profile_photo from "./../../img/icons/header/profile_photo.svg"
 
-import Button from "../Modal/Button"
-
-
-
 
 const Header = () => {
     return ( 
@@ -26,7 +22,7 @@ const Header = () => {
                                 <p className="search_title">Пошук...</p>
                         </div>
 
-                        <Button/>
+                        {/* <Button/> */}
 
                         {/* <div className="flex center_item g-16">
                                 <div className="notification">
