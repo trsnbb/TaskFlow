@@ -1,0 +1,10 @@
+.container_home {
+  padding: 20px 40px;
+  font-size: 14px;
+}
+.container_project_diagram{
+    display: flex;
+    justify-content: space-between;
+
+}
+

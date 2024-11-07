@@ -1,18 +1,18 @@
-import React from 'react';
-import Header from "../../components/Header/Header.jsx";
-import Navbar from "../../components/Navbar/Navbar.jsx";
-
+import React from "react";
+import Header from "../../components/Header/Header";
+import Navbar from "../../components/Navbar/Navbar";
+import Message from "../../components/Message/Message";
 
 const MessagePage = () => {
   return (
     <>
       <Header />
-
-      <div className='flex'>
+      <div className="navbar-wrapper">
         <Navbar />
-        Повідомлення
       </div>
-      
+      <div className="main-content">
+        <Message />
+      </div>
     </>
   );
 };

@@ -1,16 +1,17 @@
-import React from 'react';
-import Header from "../../components/Header/Header.jsx";
-import Navbar from "../../components/Navbar/Navbar.jsx";
-
+import React from "react";
+import Header from "../../components/Header/Header";
+import Navbar from "../../components/Navbar/Navbar";
+import Project from "../../components/Project/Project";
 
 const TaskPage = () => {
   return (
     <>
-      <Header />
-
-      <div className='flex'>
+    <Header />
+      <div className="navbar-wrapper">
         <Navbar />
-        Завдання
+      </div>
+      <div className="main-content">
+        <Project />
       </div>
     </>
   );

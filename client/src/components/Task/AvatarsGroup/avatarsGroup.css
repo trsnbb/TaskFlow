@@ -1,0 +1,70 @@
+.avatars-group {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.avatars_group_task {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -10px; 
+}
+
+.avatars-group .avatar:first-child {
+  margin-left: 0; 
+}
+
+.avatars-group .avatar:nth-child(2) {
+  margin-left: -5px;
+}
+
+.avatar_tasks {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -5px;
+}
+
+.avatar_tasks:first-child {
+  margin-left: 0; 
+}
+
+.avatar_tasks:nth-child(2) {
+  margin-left: -2.5px;
+}
+
+.avatar_extra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b3a0f6; 
+  color: white;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -10px;
+}
+
+.avatar_extra_tasks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b3a0f6; 
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -5px; 
+  width: 30px;
+  height: 30px;
+}

@@ -1,0 +1,239 @@
+.container_mess {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-height: 80vh;
+}
+
+/* members.jsx */
+.members_container {
+  background-color: #e3e7e2;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.selected,
+.members_container:hover {
+  background-color: #a7b8a0; 
+}
+
+.avatar_members {
+  height: calc(80%);
+  aspect-ratio: 1 / 1;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.info_members {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 83%;
+}
+
+.info_members > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon_and_time_members {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.members_name {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+}
+
+.down_container_members p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 350px;
+  opacity: 60%;
+  font-size: 14px;
+}
+
+/* chat.jsx */
+.chat_container {
+  height: 91vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header_chat {
+  height: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 32px;
+  background-color: #e3e7e2;
+}
+
+.body_chat {
+  height: 82%;
+  background-color: #e0e7d7;
+  background-image: url("./../../img//icons/message/background_1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: 2px solid #9eb196;
+  border-top: 2px solid #9eb196;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 8px 24px 24px 24px;
+}
+
+.body_chat::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+.body_chat::-webkit-scrollbar-thumb {
+  background-color: #4e7140;
+  border-radius: 10px;
+  border: 4px solid #e3e7e2;
+}
+
+.mess_block {
+  padding: 8px 14px;
+  border-radius: 10px;
+  position: relative;
+  display: inline-block;
+  max-width: 50%;
+  width: auto;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+}
+
+.mess_block.user {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+}
+
+.mess_block.other {
+  background-color: #fff;
+  align-self: flex-start;
+}
+
+.mess_block.other::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  background-color: inherit;
+}
+
+.mess_block.user::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 10px;
+  height: 10px;
+  background-color: inherit;
+}
+
+.timestamp {
+  display: block;
+  margin-top: 5px;
+  color: #666;
+  font-size: 10px;
+  text-align: right;
+}
+
+.footer_chat {
+  background-color: #e3e7e2;
+  height: 10%;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.write_wrapper {
+  background-color: #c6d0c2;
+  border-radius: 20px;
+  width: 100%;
+  padding: 15px 22px;
+  font-size: 14px;
+}
+
+.info_chat_header {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 16px;
+}
+
+.avatar_chats_header {
+  height: 100%;
+  border-radius: 50%;
+  z-index: 100;
+  aspect-ratio: 1 / 1;
+  border: 2px solid #000;
+}
+
+.icon_header_chat {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  
+}
+
+.more_header {
+  transform: rotate(90deg);
+  font-size: 34px;
+  color: #4e7140;
+  margin-left: 32px;
+  cursor: pointer;
+}
+
+/* friendChats.jsx */
+.friend_chats_container {
+  background-color: #e3e7e2;
+  height: 91vh;
+  width: 35%;
+  overflow: hidden;
+  overflow-y: scroll;
+  border-right: 2px solid #9eb196;
+}
+
+.friend_chats_container::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+/* .friend_chats_container::-webkit-scrollbar-thumb {
+  background-color: #4e7140;
+  border-radius: 10px;
+  border: 4px solid #e3e7e2;
+} */
+
+.no_chat_selected,
+.not_authenticated {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 24px;
+  color: #5d7b51;
+  background-color: #f1f5ee;
+}

@@ -1,15 +1,17 @@
 import React from 'react';
-import Header from "../../components/Header/Header.jsx";
-import Navbar from "../../components/Navbar/Navbar.jsx";
+import Header from "../../components/Header/Header";
+import Navbar from "../../components/Navbar/Navbar";
+import Friends from '../../components/Friends/Friends';
 
 const FriendPage = () => {
   return (
     <>
-      <Header />
-
-      <div className='flex'>
+       <Header />
+      <div className="navbar-wrapper">
         <Navbar />
-        Друзі
+      </div>
+      <div className="main-content">
+        <Friends/>
       </div>
       
     </>

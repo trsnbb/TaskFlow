@@ -1,0 +1,32 @@
+
+.container_task_page{
+	width: 100%;
+	padding-left: 40px;
+}
+
+.title_task_page{
+	color: #20341B;
+	font-size: 26px;
+	margin-top: 40px;
+}
+
+.grid_container{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);;
+    gap: 2px;
+}
+
+.link_modal_auth{
+	text-decoration: underline;
+    color: #4E7140; 
+    cursor: pointer; 
+}
+
+.text_auth{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	font-size: 20px;
+}
