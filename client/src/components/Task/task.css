@@ -1,0 +1,52 @@
+.container_task_project_page {
+  padding: 40px 40px 0 40px;
+  width: 100%;
+}
+
+.title_icon {
+  display: flex;
+  align-items: center;
+}
+.icons_project_task {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 60px;
+}
+
+.add_members_icon {
+  margin: 0 10px;
+}
+
+.members_project {
+  display: flex;
+  align-items: center;
+}
+
+.header_project_task {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.title_project_task {
+  font-size: 30px;
+}
+
+.rename_project {
+  cursor: pointer;
+}
+
+.button_delete_project {
+  color: rgb(226, 49, 49);
+  font-size: 16px;
+  font-weight: 600;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  background-color: rgb(249, 179, 179);
+  padding: 4px;
+  
+}

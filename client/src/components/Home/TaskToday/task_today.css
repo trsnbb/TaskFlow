@@ -1,0 +1,142 @@
+.today_task {
+  height: 260px;
+  width: 750px;
+  background-color: #f1f4f0;
+  border-radius: 15px;
+  padding: 18px 0 0 20px;
+  color: #060606;
+}
+
+.title_today_task {
+  -webkit-text-stroke: #060606 1px;
+}
+
+.filter_today_task {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+
+  border-bottom: #c4d0bf solid 1px;
+  padding-bottom: 5px;
+  position: relative;
+  margin-right: 20px;
+}
+
+.active_all {
+  &:before {
+    content: " ";
+    width: calc(100% / 5 - 50px);
+    height: 3px;
+    background-color: #4e7140;
+    position: absolute;
+    top: calc(100% - 1px);
+    border-radius: 2px;
+    left: calc(0%);
+  }
+}
+
+.circle_count {
+  aspect-ratio: 1 / 1;
+  width: 18px;
+  background-color: #b9b7de;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.filter_item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.task_list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 160px;
+  padding: 8px;
+  margin-right: 10px;
+
+}
+
+.task_list::-webkit-scrollbar{
+    background-color: transparent;  
+    
+}
+
+.task_list::-webkit-scrollbar-thumb{
+    background-color: green;
+    border-radius: 10px;
+    border: 4px solid #f1f4f0;
+}
+
+.task_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.circle_status {
+  aspect-ratio: 1 / 1;
+  width: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status_task {
+  background-color: #c7e0c9;
+  text-align: center;
+  width: 120px;
+  padding: 2px 0;
+  border-radius: 10px;
+  color: #1a932e;
+  font-weight: 600;
+}
+
+.status_task_red {
+  background-color: #ecd6c9;
+  color: #e65f2b;
+}
+
+.status_task_yellow {
+  background-color: #eee5c1;
+  color: #f2ae01;
+}
+
+.status_task_blue {
+  background-color: #cfdbe9;
+  color: #4778dd;
+}
+
+.circle_task1 {
+  background-color: #4e7140;
+}
+.circle_task2 {
+  background-color: #fd8d65;
+}
+.circle_task3 {
+  background-color: #f2ae01;
+}
+.circle_task4 {
+  border: #7ea3e3 solid 1px;
+}
+.circle_task5 {
+  background-color: #4e7140;
+}

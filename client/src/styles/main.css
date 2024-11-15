@@ -1,0 +1,23 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+
+#root {
+  width: 100%;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Comfortaa";
+  overflow-x: hidden;
+}
+
+
+
+.main-content {
+  display: flex;
+  margin-top: 64px;
+  margin-left: 240px;
+}
